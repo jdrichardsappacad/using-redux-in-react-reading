@@ -101,7 +101,7 @@ function component.
 
 ```js
 export const getFruits = (state) => {
-  return state.fruitState;
+  return state.fruitState.fruits;
 };
 ```
 
