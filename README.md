@@ -101,7 +101,7 @@ function component.
 
 ```js
 export const getFruits = (state) => {
-  return state.fruits;
+  return state.fruitState;
 };
 ```
 
@@ -160,7 +160,7 @@ import { populateFruits } from '../store/fruitReducer';
 
 function FruitsList() {
   const dispatch = useDispatch();
-  const fruits = useSelector((state) => state.fruits);
+  const fruits = useSelector((state) => state.fruitState);
 
   useEffect(() => {
     dispatch(populateFruits());
